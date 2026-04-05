@@ -27,7 +27,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header>황금박쥐 시세 계산기</header>
+        <main>{children}</main>
+        <footer></footer>
       </body>
     </html>
   );
