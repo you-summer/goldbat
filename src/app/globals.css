@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "BomBaram";
+  src: url("/HSBombaram3.0_Regular.ttf");
+}
+
 html,
 body {
   margin: 0px;
   padding: 0px;
   /* background-color: rgb(250, 250, 250); */
   background-color: black;
+  color: white;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
