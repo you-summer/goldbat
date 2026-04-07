@@ -3,12 +3,14 @@
 import LightRays from "@/components/LightRays";
 import Image from "next/image";
 import style from "./page.module.css";
-import SplitText from "../components/SplitText";
+import SplitTextComponent from "@/components/split-text-component";
 
 export default function Home() {
-  const handleAnimationComplete = () => {
-    console.log("All letters have animated!");
-  };
+  const textItem = [
+    { text: "황금", className: style.gold, delay: 50 },
+    { text: "박쥐", className: style.bat, delay: 100 },
+  ];
+
   return (
     <div className={style.container}>
       {/* 배경 효과 */}
@@ -30,37 +32,9 @@ export default function Home() {
 
       <div className={style.test}>
         <div className={style.goldBatText}>
-          <SplitText
-            text="황금"
-            className={style.gold}
-            delay={50}
-            duration={1.25}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-            onLetterAnimationComplete={handleAnimationComplete}
-            // showCallback
-          />
-
-          <SplitText
-            text="박쥐"
-            className={style.bat}
-            delay={50}
-            duration={1.25}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-            onLetterAnimationComplete={handleAnimationComplete}
-            // showCallback
-          />
+          {textItem.map((item, idx) => {
+            return <SplitTextComponent key={idx} item={item} />;
+          })}
         </div>
 
         {/* 이미지 */}
