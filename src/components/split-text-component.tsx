@@ -3,7 +3,7 @@
 import SplitText from "./SplitText";
 
 type Props = {
-  item: { text: string; className: string };
+  item: { text: string; className: string; delay: number };
 };
 
 export default function SplitTextComponent({ item }: Props) {
@@ -16,8 +16,8 @@ export default function SplitTextComponent({ item }: Props) {
       <SplitText
         text={item.text}
         className={item.className}
-        delay={50}
-        duration={1.25}
+        delay={item.delay}
+        duration={2}
         ease="power3.out"
         splitType="chars"
         from={{ opacity: 0, y: 40 }}

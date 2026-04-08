@@ -4,11 +4,13 @@ import LightRays from "@/components/LightRays";
 import Image from "next/image";
 import style from "./page.module.css";
 import SplitTextComponent from "@/components/split-text-component";
+import FluidGlass from "@/components/FluidGlass";
+// import FluidGlass from "./FluidGlass";
 
 export default function Home() {
   const textItem = [
-    { text: "황금", className: style.gold, delay: 50 },
-    { text: "박쥐", className: style.bat, delay: 100 },
+    { text: "황금", className: style.gold, delay: 200 },
+    { text: "박쥐", className: style.bat, delay: 200 },
   ];
 
   return (
@@ -46,6 +48,29 @@ export default function Home() {
             height={800}
           />
         </div>
+      </div>
+
+      <div style={{ height: "600px", position: "relative" }}>
+        <FluidGlass
+          mode="lens" // or "bar", "cube"
+          lensProps={{
+            scale: 0.25,
+            ior: 1.15,
+            thickness: 5,
+            chromaticAberration: 0.1,
+            anisotropy: 0.01,
+          }}
+          barProps={} // add specific props if using bar mode
+          cubeProps={} // add specific props if using cube mode
+          mode="bar"
+          scale={0.1}
+          ior={1.2}
+          thickness={10}
+          transmission={1}
+          roughness={0.2}
+          chromaticAberration={0.21}
+          anisotropy={0.01}
+        />
       </div>
     </div>
   );
