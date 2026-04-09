@@ -40,13 +40,14 @@ export default function Home() {
         {/* 이미지 */}
         <div className={style.goldBatImg}>
           <Image
-            src="/goldBat.png"
+            src="/goldBat11.png"
             alt="황금 박쥐 이미지"
             width={800}
             height={800}
           />
         </div>
       </div>
+      <div className={style.test1}></div>
     </div>
   );
 }
