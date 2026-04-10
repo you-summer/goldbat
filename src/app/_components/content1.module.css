@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "BomBaram";
+  src: url("/HSBombaram3.0_Regular.ttf");
+}
+
+.container {
+  background-color: black;
+  width: 100%;
+}
+
+.container .goldBatImg {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.container .test {
+  position: relative;
+}
+
+.container .goldBatText {
+  font-family: "BomBaram";
+  position: absolute;
+  font-size: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 20px; /* 글자 사이 간격 조절 */
+  white-space: nowrap;
+  z-index: 1;
+  /* mix-blend-mode: difference; */
+}
+
+.goldBatText .gold {
+  transform: translate(-180px, -180px); /* x, y 자유롭게 */
+}
+
+.goldBatText .bat {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  transform: translate(180px, 80px);
+}

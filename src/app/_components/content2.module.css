@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* 필수 */
+  justify-content: center;
+}
+
+.container .textContent {
+  font-family: "Pretendard";
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: black;
+}
+
+.container .goldBatText {
+  background-color: gold;
+  margin: 0px;
+  border-radius: 50px;
+  padding: 0px 30px;
+  white-space: nowrap;
+}
