@@ -1,10 +1,8 @@
 import FadeFramerMotion from "@/components/FadeFramerMotion";
 import style from "./content2.module.css";
-import DownArrowButton from "./down-arrow-button";
 
 export default function Content2() {
   return (
-    // ref={ref}
     <div className={style.container}>
       <FadeFramerMotion>
         <div className={style.textContent}>
@@ -15,7 +13,6 @@ export default function Content2() {
           <div>시세는?</div>
         </div>
       </FadeFramerMotion>
-      <DownArrowButton />
     </div>
   );
 }
