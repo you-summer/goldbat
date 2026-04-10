@@ -2,15 +2,32 @@
 
 import Link from "next/link";
 import style from "./Header.module.css";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
-export default function Header({ isEnter }: { isEnter: boolean }) {
+export default function Header() {
   type NavItem = {
     id: number;
     menu: string;
     url: string;
     icon: ReactNode;
   };
+
+  const [isEnter, setIsEnter] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+
+      if (y > 800 && y < 1600) {
+        setIsEnter(true); // content2 영역
+      } else {
+        setIsEnter(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navBar: NavItem[] = [
     {
@@ -107,6 +124,7 @@ export default function Header({ isEnter }: { isEnter: boolean }) {
 
   return (
     <header className={`${style.nav} ${isEnter ? style.black : ""}`}>
+      <div style={{ color: "red" }}>{isEnter ? "true" : "false"}</div>
       {navBar.map((item) => {
         return (
           <Link href={item.url} key={item.id}>
