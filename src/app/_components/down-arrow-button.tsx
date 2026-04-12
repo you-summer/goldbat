@@ -2,9 +2,14 @@
 import style from "./down-arrow-button.module.css";
 
 export default function DownArrowButton() {
+  const onClickArrow = () => {
+    document.getElementById("content3")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <div className={style.container}>
-      <div className={style.arrow}>
+      <div className={style.arrow} onClick={onClickArrow}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

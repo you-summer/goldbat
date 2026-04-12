@@ -124,7 +124,7 @@ export default function Header() {
 
   return (
     <header className={`${style.nav} ${isEnter ? style.black : ""}`}>
-      <div style={{ color: "red" }}>{isEnter ? "true" : "false"}</div>
+      {/* <div style={{ color: "red" }}>{isEnter ? "true" : "false"}</div> */}
       {navBar.map((item) => {
         return (
           <Link href={item.url} key={item.id}>
