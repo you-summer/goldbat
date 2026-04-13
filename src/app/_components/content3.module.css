@@ -1,3 +1,57 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard900";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
 .container {
-  height: 1100px;
+  font-family: "Pretendard";
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.goldBat {
+  color: gold;
+  font-size: 80px;
+}
+
+.container .referDate {
+  color: rgb(164, 164, 164);
+}
+
+.textSection {
+  width: 35%;
+  line-height: 1.2;
+  border: 1px solid blue;
+}
+
+.chartSection {
+  width: 65%;
+  flex: 1;
+}
+
+.weight {
+  color: black;
+  font-family: "Pretendard900";
+  font-size: 55px;
+}
+
+.price {
+  color: black;
+  font-size: 80px;
 }

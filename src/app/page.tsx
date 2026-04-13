@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <Content2 />
       <DownArrowButton />
-      <div id="content3">
+      <div id="content3" className={style.content3}>
         <Content3 />
       </div>
     </div>
