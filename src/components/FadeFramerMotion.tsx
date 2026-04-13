@@ -10,7 +10,7 @@ export default function FadeFramerMotion({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 50 },
+        hidden: { opacity: 0, y: 100 },
         show: { opacity: 1, y: 0 },
       }}
       initial="hidden"
@@ -23,7 +23,7 @@ export default function FadeFramerMotion({
         duration: 0.6,
         ease: "easeOut",
       }}
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0 }}
     >
       {children}
     </motion.div>

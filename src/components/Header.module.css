@@ -1,0 +1,49 @@
+.container {
+  width: 300px;
+}
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.nav {
+  display: inline-flex;
+  background-color: black;
+  padding: 15px;
+  width: 70px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+.nav:hover {
+  width: 150px;
+}
+
+.nav svg {
+  transition: transform 0.3s ease;
+}
+
+.nav:hover svg {
+  transform: translateX(80px);
+}
+
+.active {
+  width: 150px;
+  background-color: gold;
+}
+
+.nav svg {
+  transition: transform 0.3s ease;
+}
+
+.active.nav svg {
+  transform: translateX(80px);
+}
