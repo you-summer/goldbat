@@ -1,5 +1,6 @@
 import style from "./content3.module.css";
 import GoldAPI from "@/actions/goldAPI";
+import { LineChart } from "@/components/Chart";
 import CountUp from "@/components/CountUp";
 
 export default async function Content3() {
@@ -13,8 +14,15 @@ export default async function Content3() {
   const price = Math.floor((Number(gold1kg[0].clpr) * 162000) / 100000000);
 
   console.log("content3", gold1kg);
-
   // 황금 박쥐상 순금 무게 162kg
+
+  // 차트용 데이터 재가공
+  const formattData = gold1kg.map((item) => {
+    return {
+      data: `${item.basDt.slice(0, 4)}.${item.basDt.slice(4, 6)}.${item.basDt.slice(6, 8)}`,
+      price: Number(item.clpr),
+    };
+  });
 
   return (
     <div className={style.container}>
@@ -33,12 +41,14 @@ export default async function Content3() {
             separator=","
             direction="up"
             duration={1}
-            className="count-up-text"
+            className={style.countUpText}
           />
           억
         </div>
       </div>
-      <div className={style.chartSection}>여기가 차트섹션</div>
+      <div className={style.chartSection}>
+        <LineChart formattData={formattData} />
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default async function GoldAPI() {
     const params = new URLSearchParams({
       serviceKey: SERVER_KEY,
       pageNo: "1",
-      numOfRows: "10",
+      numOfRows: "14",
       resultType: "json",
     });
 
@@ -20,7 +20,9 @@ export default async function GoldAPI() {
     //trqu = 거래량
 
     const response = await fetch(`${url}?${params.toString()}`, {
-      cache: "no-store",
+      next: { revalidate: 3600 }, // 1시간마다 호출
+      // 데이터 갱신은 기준일자로부터 영업일 하루 뒤 오후 1시 이후에 업데이트
+      // 예를 들어, 금요일 데이터는 차주 월요일에 제공됩니다. (월요일이 공휴일인 경우, 다음 영업일에 제공됩니다)
     });
 
     if (!response.ok) {

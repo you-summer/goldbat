@@ -11,7 +11,7 @@ export default function Content1() {
   return (
     <div className={style.container}>
       {/* 배경 효과 */}
-      {/* <LightRays
+      <LightRays
         className="absolute inset-0 z-0"
         raysOrigin="top-center"
         raysColor="#ffffff"
@@ -25,7 +25,7 @@ export default function Content1() {
         pulsating={false}
         fadeDistance={1}
         saturation={2}
-      /> */}
+      />
 
       <div className={style.test}>
         <div className={style.goldBatText}>
@@ -39,8 +39,8 @@ export default function Content1() {
           <Image
             src="/goldBat11.png"
             alt="황금 박쥐 이미지"
-            width={800}
-            height={800}
+            width={700}
+            height={700}
           />
         </div>
       </div>

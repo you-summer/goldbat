@@ -18,10 +18,12 @@
   font-family: "Pretendard";
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 50px;
   padding-left: 7%;
   padding-right: 7%;
   padding-top: 50px;
+  height: 100vh;
   background-color: rgb(255, 255, 255);
 }
 
@@ -37,12 +39,14 @@
 .textSection {
   width: 35%;
   line-height: 1.2;
-  border: 1px solid blue;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chartSection {
   width: 65%;
-  flex: 1;
 }
 
 .weight {
@@ -54,4 +58,8 @@
 .price {
   color: black;
   font-size: 80px;
+}
+
+.countUpText {
+  font-size: 90px;
 }
