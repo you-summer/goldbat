@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.container > button {
+  color: #0068c3;
+  cursor: pointer;
+}

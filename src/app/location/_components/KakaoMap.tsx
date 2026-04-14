@@ -24,7 +24,8 @@ export default function KakaoMap() {
 
         // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
         const map = new window.kakao.maps.Map(container.current, mapOption);
-        // 📍 마커 생성
+
+        // 마커 생성
         new window.kakao.maps.Marker({
           map: map,
           position: new window.kakao.maps.LatLng(35.054531, 126.52144),
