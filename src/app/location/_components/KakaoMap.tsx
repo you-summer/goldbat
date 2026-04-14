@@ -18,8 +18,8 @@ export default function KakaoMap() {
       window.kakao.maps.load(() => {
         // const mapContainer = document.getElementById("container"); // 지도를 표시할 div
         const mapOption = {
-          center: new window.kakao.maps.LatLng(37.402054, 127.108209), // 지도의 중심좌표
-          level: 3, // 지도의 확대 레벨
+          center: new window.kakao.maps.LatLng(35.054531, 126.52144), // 지도의 중심좌표
+          level: 2, // 지도의 확대 레벨
         };
 
         // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
@@ -27,7 +27,7 @@ export default function KakaoMap() {
         // 📍 마커 생성
         new window.kakao.maps.Marker({
           map: map,
-          position: new window.kakao.maps.LatLng(37.402054, 127.108209),
+          position: new window.kakao.maps.LatLng(35.054531, 126.52144),
         });
       });
     };
@@ -35,8 +35,7 @@ export default function KakaoMap() {
 
   return (
     <div>
-      <div>지도지도</div>
-      <div ref={container} style={{ width: "500px", height: "400px" }}></div>
+      <div ref={container} style={{ width: "100%", height: "500px" }}></div>
     </div>
   );
 }

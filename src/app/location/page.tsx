@@ -8,17 +8,11 @@ export default function Page() {
       <Header />
 
       <div className={style.content}>
-        <div className={style.left}> d</div>
-        <div className={style.right}>
-          <div className={style.title}>찾아가는 길</div>
-          <div>
-            지도자리
-            <div id="map" className={style.map}>
-              <KakaoMap />
-            </div>
-          </div>
-          <div>운영시간</div>
+        <div className={style.title}>현재 어디에 있나요?</div>
+        <div className={style.map}>
+          <KakaoMap />
         </div>
+        <div>운영시간</div>
       </div>
     </div>
   );
