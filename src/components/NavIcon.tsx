@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 type Props = {
-  type: ReactNode;
+  type: "home" | "map" | "like" | "contact";
   isEnter: boolean;
 };
 

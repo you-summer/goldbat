@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import style from "./page.module.css";
 import KakaoMap from "./_components/KakaoMap";
 import CopyButton from "./_components/copy-button";
@@ -17,6 +17,7 @@ export default function Page() {
         <div className={style.map}>
           <KakaoMap />
         </div>
+
         <div className="flex gap-2">
           <div>
             <Link
@@ -71,14 +72,15 @@ export default function Page() {
         </div>
 
         <div className={style.info}>
-          <div className={style.infoTitle}>📍 위치</div>
+          <div className={style.infoTitle}>위치</div>
           <CopyButton data={address} />
-          <div className={style.infoTitle}>🕘 관람 시간</div>
+          <hr />
+          <div className={style.infoTitle}>관람 시간</div>
           <div>09:00 ~ 18:00 </div>
-          <div className={style.infoTitle}>⛔ 휴관</div>
+          <div className={style.infoTitle}>휴관</div>
           <div>매주 월요일</div>
           <div>축제기간 중에는 휴관일 상관없이 상시 운영</div>
-          <div className={style.infoTitle}>🍴 휴게시간</div>
+          <div className={style.infoTitle}>휴게시간</div>
           <div>12:00 ~ 13:00</div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import style from "./page.module.css";
 
 export default function Page() {
