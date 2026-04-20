@@ -4,3 +4,7 @@
     format("woff2");
   font-display: swap;
 }
+
+.body * {
+  font-family: "Pretendard";
+}

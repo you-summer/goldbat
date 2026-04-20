@@ -9,23 +9,25 @@ export default async function WeatherAPI() {
   function getBaseTime() {
     const now = new Date();
     const hour = now.getHours();
-    return String(hour).padStart(2, "0") + "00";
+    return String(hour - 1).padStart(2, "0") + "00";
   }
 
   try {
-    const SERVER_KEY = process.env.WEATHER_API_KEY!;
+    const SERVER_KEY = decodeURIComponent(process.env.WEATHER_API_KEY!);
     const url = process.env.NEXT_PUBLIC_WEATHER_API_URL;
 
     const params = new URLSearchParams({
       serviceKey: SERVER_KEY,
       pageNo: "1",
-      numOfRows: "1000",
+      numOfRows: "10",
       dataType: "JSON",
       base_date: getBaseDate(),
       base_time: getBaseTime(),
       nx: "52",
       ny: "71",
     });
+
+    console.log("요청 URL:", `${url}/getUltraSrtNcst?${params.toString()}`);
 
     const response = await fetch(
       `${url}/getUltraSrtNcst?${params.toString()}`,
@@ -43,6 +45,8 @@ export default async function WeatherAPI() {
 
     // 👉 T1H만 찾기
     const tempItem = items.find((item: any) => item.category === "T1H");
+
+    console.log("오류?", tempItem);
 
     return {
       status: true,

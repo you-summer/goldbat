@@ -1,0 +1,30 @@
+.container {
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.container .hampyoeng {
+  border-bottom: 2px solid gold;
+}
+
+.container .temp {
+  position: relative;
+  display: inline-block;
+  padding: 6px 10px;
+}
+
+.container .temp::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid gold;
+  border-radius: 15px;
+
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.container .temp:hover::after {
+  transform: scale(1);
+}

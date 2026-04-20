@@ -3,6 +3,7 @@ import style from "./page.module.css";
 import KakaoMap from "./_components/KakaoMap";
 import CopyButton from "./_components/copy-button";
 import Link from "next/link";
+import LiquidEther from "@/components/LiquidEther";
 
 export default function Page() {
   const address =
