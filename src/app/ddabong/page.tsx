@@ -61,7 +61,6 @@ export default function Page() {
         </div>
 
         {/* 댓글 */}
-
         <div className={`${style.comment} flex justify-center`}>
           <CommentBox />
         </div>
