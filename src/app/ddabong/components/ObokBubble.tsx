@@ -36,7 +36,7 @@ const OBOK_ITEMS = [
   {
     label: "고종명",
     desc: "때가 되면 편안하게 생을 마치는 복",
-    rotation: 8,
+    rotation: -8,
     hoverBg: "#8b5cf6",
     hoverColor: "#ffffff",
   },
