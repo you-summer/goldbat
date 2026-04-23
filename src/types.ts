@@ -6,3 +6,9 @@ export type NavItem = {
   url: string;
   icon: ReactNode;
 };
+
+export type Comment = {
+  commentNumber: number;
+  content: string;
+  createdAt: string;
+};
