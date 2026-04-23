@@ -9,10 +9,9 @@ import {
 } from "firebase/firestore";
 
 // 댓글 추가
-export const addComment = async (text: string) => {
+export const addComment = async (comment: string) => {
   await addDoc(collection(db, "comment"), {
-    commentNumber: text.id,
-    content: text.comment,
+    content: comment,
     createdAt: new Date(),
   });
 };

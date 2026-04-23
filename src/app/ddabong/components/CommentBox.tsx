@@ -3,26 +3,24 @@
 import { useState } from "react";
 import styles from "./CommentBox.module.css";
 import CommentItem from "./CommentItem";
-import { addDoc, collection } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { addComment } from "@/lib/firebaseDB";
 
 export default function CommentBox() {
   const [comment, setComment] = useState("");
 
-  const handleSubmit = () => {
-    if (!comment.trim()) return;
+  const handleSubmit = async () => {
+    if (!comment.trim()) {
+      alert("내용을 입력해주세요!");
+      return;
+    }
 
-    alert("따봉 완료 👍");
-    setComment("");
-    addComment(comment);
-  };
-
-  // 댓글 추가
-  const addComment = async (comment: string) => {
-    await addDoc(collection(db, "comment"), {
-      content: comment,
-      createdAt: new Date(),
-    });
+    try {
+      await addComment(comment);
+      alert("따봉 완료 👍");
+      setComment("");
+    } catch (e) {
+      alert("에러 발생");
+    }
   };
 
   return (
