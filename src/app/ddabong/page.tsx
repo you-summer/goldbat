@@ -29,31 +29,35 @@ export default function Page() {
           </div>
         </FadeFramerMotion>
 
-        <div>
-          <div className="flex-ro flex items-center text-2xl">
-            <span className="px-3 text-4xl text-yellow-300">[</span>따봉
-            황금박쥐야 고마워!
-            <span className="px-3 text-4xl text-yellow-300">]</span>
+        <FadeFramerMotion>
+          <div>
+            <div className="flex-ro flex items-center py-50 text-2xl">
+              <span className="px-3 text-4xl text-yellow-300">[</span>따봉
+              황금박쥐야 고마워!
+              <span className="px-3 text-4xl text-yellow-300">]</span>
+            </div>
           </div>
-        </div>
+        </FadeFramerMotion>
 
-        <div className={style.description}>
-          <div className="text-6xl">댓글을 남기고</div>
-          <div className="text-5xl">
-            황금이 가지는{" "}
-            <span className="py-0.4 rounded-2xl bg-red-500 px-2 text-white">
-              불멸의 기운
-            </span>
-            과
+        <FadeFramerMotion>
+          <div className={style.description}>
+            <div className="text-6xl">댓글을 남기고</div>
+            <div className="text-5xl">
+              황금이 가지는{" "}
+              <span className="py-0.4 rounded-2xl bg-red-500 px-2 text-white">
+                불멸의 기운
+              </span>
+              과
+            </div>
+            <div className="text-6xl">
+              <span className="rounded-2xl bg-yellow-400 px-1 text-white">
+                오복
+              </span>
+              의 기운을
+            </div>
+            <div className="text-6xl">받아보세요!</div>
           </div>
-          <div className="text-6xl">
-            <span className="rounded-2xl bg-yellow-400 px-1 text-white">
-              오복
-            </span>
-            의 기운을
-          </div>
-          <div className="text-6xl">받아보세요!</div>
-        </div>
+        </FadeFramerMotion>
 
         <div className={style.obok}>
           <div className="pb-4 text-xl">오복이란?</div>
