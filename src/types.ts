@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Timestamp } from "firebase/firestore";
 
 export type NavItem = {
   id: number;
@@ -8,7 +9,6 @@ export type NavItem = {
 };
 
 export type Comment = {
-  commentNumber: number;
   content: string;
-  createdAt: string;
+  createdAt: Timestamp;
 };

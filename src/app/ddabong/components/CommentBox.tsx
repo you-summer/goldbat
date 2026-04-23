@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./CommentBox.module.css";
 import CommentItem from "./CommentItem";
-import { addComment } from "@/lib/firebaseDB";
+import { addComment, getComment } from "@/lib/firebaseDB";
+import { Comment } from "@/types";
 
 export default function CommentBox() {
   const [comment, setComment] = useState("");
+  const [commentList, setCommentList] = useState<Comment[]>([]);
 
   const handleSubmit = async () => {
     if (!comment.trim()) {
@@ -18,10 +20,24 @@ export default function CommentBox() {
       await addComment(comment);
       alert("따봉 완료 👍");
       setComment("");
+
+      const data = await getComment();
+      console.log("🔥 가져온 데이터", data);
+      setCommentList(data);
     } catch (e) {
       alert("에러 발생");
     }
   };
+
+  useEffect(() => {
+    const commentList = async () => {
+      const comment = await getComment();
+      setCommentList(comment);
+    };
+    commentList();
+  }, [comment]);
+
+  console.log("댓글리스트?", commentList);
 
   return (
     <div className={styles.container}>
