@@ -83,7 +83,7 @@ Kakao Map API를 활용한 위치 시각화와  </br>
 - 관람 시간 및 운영 정보 제공
 - 카드 기반 정보 구조 UI 설계
 
-#### 문의 페이지
+### 문의 페이지
 <img width="1232" height="804" alt="image" src="https://github.com/user-attachments/assets/dcef63f6-8078-4cb9-8ac0-af58e4f239b9" />
 
 #### Contact
@@ -92,13 +92,17 @@ Kakao Map API를 활용한 위치 시각화와  </br>
 - 프로젝트 피드백 및 문의 채널 역할
 - 사용자-개발자 간 커뮤니케이션 인터페이스 설계
 
+### 메타데이터를 이용한 SEO설정
+<img width="374" height="275" alt="image" src="https://github.com/user-attachments/assets/8bec82fe-1d5b-4e1e-ba14-4ab7ea48c851" />
+
+
 ---
 
 ## 🛠️ 사용 기술
 #### Frontend
 - Next.js (App Router)
   - Server Component / Client Component 구조 활용
-  - metadata API를 활용한 SEO 설정
+  - metadata를 활용한 SEO 설정
 - React
   - useState / useEffect 기반 상태 관리
   - 컴포넌트 단위 UI 분리 및 재사용 구조 설계
