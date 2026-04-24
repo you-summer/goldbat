@@ -21,14 +21,14 @@ Next.js 기반으로 구현된 웹 애플리케이션으로,
 
 <img width="1895" height="901" alt="image" src="https://github.com/user-attachments/assets/fcbaf148-8ee8-4d1f-b02d-d6e30d5abd2c" />
 
-### Content1
+#### Content1
 인터랙티브 배경과 SplitText 애니메이션을 활용한 히어로 섹션입니다.
 첫 화면에서 인터랙티브 배경 효과와 타이포그래피 애니메이션을 통해 프로젝트의 분위기를 직관적으로 전달하도록 설계했습니다.
 
 
 <img width="1900" height="1816" alt="황금박쥐 (1)" src="https://github.com/user-attachments/assets/33185dbd-a747-4e43-8d32-6eb52f9829b8" />
 
-### Content2 & Content3
+#### Content2 & Content3
 금 시세 API를 활용하여 데이터를 비동기로 가져옵니다.</br>
 황금박쥐(162kg)의 가치를 자동 계산하여 표시합니다.</br>
 과거 데이터를 기반으로 라인 차트를 제공합니다.</br>
@@ -38,3 +38,18 @@ Next.js 기반으로 구현된 웹 애플리케이션으로,
 - 황금박쥐 조형물 (162kg) 가치 자동 계산
 - CountUp 애니메이션으로 숫자 인터랙션
 - Chart.js 기반 시세 변동 시각화
+
+### 소원빌기 페이지
+<img width="1130" height="1426" alt="황금박쥐-소원빌기" src="https://github.com/user-attachments/assets/c75dd518-09d1-4079-9255-e83a98af25ce" />
+
+####Wish / Comment Section
+단순 CRUD 기능이 아니라</br>
+스토리 기반 UX 흐름을 설계하여 사용자가 메시지를 남기는 과정을 하나의 경험처럼 느낄 수 있도록 구현했습니다.</br>
+Firebase를 활용해 데이터를 저장하고,</br>
+Framer Motion으로 단계별 인터랙션을 구성했습니다.</br>
+- 스토리 기반 메시지 UI 구성
+- Framer Motion 기반 단계별 애니메이션
+- 조건 기반 댓글 입력 검증 (“따봉 황금박쥐야 고마워” 포함)
+- Firestore 기반 댓글 저장 및 실시간 렌더링
+- “오복” 개념을 활용한 인터랙션 UI
+- 감정 참여형 방명록 UX 설계
