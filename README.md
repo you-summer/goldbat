@@ -77,3 +77,35 @@ Kakao Map API를 활용한 위치 시각화와  </br>
 - 컴포넌트 분리를 통한 구조화 (ContactForm)
 - 프로젝트 피드백 및 문의 채널 역할
 - 사용자-개발자 간 커뮤니케이션 인터페이스 설계
+
+---
+
+## 🛠️ 사용 기술
+#### Frontend
+- Next.js (App Router)
+  - Server Component / Client Component 구조 활용
+  - metadata API를 활용한 SEO 설정
+- React
+  - useState / useEffect 기반 상태 관리
+  - 컴포넌트 단위 UI 분리 및 재사용 구조 설계
+- TypeScript
+  - API 데이터 타입 정의 및 안정성 확보
+
+#### UI / Styling
+- Tailwind CSS
+- CSS Modules
+
+#### 라이브러리
+- Chart.js
+- framer motion
+- React bits
+
+#### BackEnd
+- firebase firestor
+
+#### API
+- 금 시세 API
+
+#### 배포
+- Vercel
+
