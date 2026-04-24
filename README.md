@@ -14,3 +14,10 @@ Next.js 기반으로 구현된 웹 애플리케이션으로,
 
 
 ---
+
+## 💻 미리보기
+
+### 메인페이지
+<img width="1920" height="2742" alt="황금박쥐" src="https://github.com/user-attachments/assets/5276a158-298c-4c91-b156-35e07fd94b60" />
+
+
