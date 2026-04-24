@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import style from "./Header.module.css";
+import style from "./header.module.css";
 import { useEffect, useState } from "react";
 import { navBar } from "@/constants/navBar";
 import NavIcon from "@/components/NavIcon";

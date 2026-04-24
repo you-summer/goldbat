@@ -17,3 +17,31 @@ export type Inquiry = {
   email: string;
   message: string;
 };
+
+export type GoldItem = {
+  basDt: string;
+  clpr: string;
+  isinCd: string;
+  hipr?: string;
+  lopr?: string;
+  trqu?: string;
+};
+
+export type GoldAPIResponse = {
+  response: {
+    body: {
+      items: {
+        item: GoldItem[];
+      };
+    };
+  };
+};
+
+export type GoldAPIResult =
+  | { status: true; gold1kg: GoldItem[] }
+  | { status: false; error: string };
+
+export type ChartItem = {
+  data: string;
+  price: number;
+};

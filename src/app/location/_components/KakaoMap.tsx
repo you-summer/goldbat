@@ -15,20 +15,23 @@ export default function KakaoMap() {
     // 스크립트를 비동기로 로드해라
 
     script.onload = () => {
-      window.kakao.maps.load(() => {
+      (window as any).kakao.maps.load(() => {
         // const mapContainer = document.getElementById("container"); // 지도를 표시할 div
         const mapOption = {
-          center: new window.kakao.maps.LatLng(35.054531, 126.52144), // 지도의 중심좌표
+          center: new (window as any).kakao.maps.LatLng(35.054531, 126.52144), // 지도의 중심좌표
           level: 2, // 지도의 확대 레벨
         };
 
         // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-        const map = new window.kakao.maps.Map(container.current, mapOption);
+        const map = new (window as any).kakao.maps.Map(
+          container.current,
+          mapOption,
+        );
 
         // 마커 생성
-        new window.kakao.maps.Marker({
+        new (window as any).kakao.maps.Marker({
           map: map,
-          position: new window.kakao.maps.LatLng(35.054531, 126.52144),
+          position: new (window as any).kakao.maps.LatLng(35.054531, 126.52144),
         });
       });
     };

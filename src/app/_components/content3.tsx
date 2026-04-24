@@ -17,7 +17,7 @@ export default async function Content3() {
   // 황금 박쥐상 순금 무게 162kg
 
   // 차트용 데이터 재가공
-  const formattData = gold1kg.map((item) => {
+  const formattData = gold1kg.map((item: any) => {
     return {
       data: `${item.basDt.slice(0, 4)}.${item.basDt.slice(4, 6)}.${item.basDt.slice(6, 8)}`,
       price: Number(item.clpr),

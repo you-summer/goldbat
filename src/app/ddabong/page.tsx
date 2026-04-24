@@ -4,6 +4,17 @@ import style from "./page.module.css";
 import CommentBox from "./components/CommentBox";
 import Image from "next/image";
 import ObokBubble from "./components/ObokBubble";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "황금박쥐 - 소원빌기",
+  description: "따봉 황금박쥐야 고마워!",
+  openGraph: {
+    title: "황금박쥐 - 소원빌기",
+    description: "따봉 황금박쥐야 고마워!",
+    images: ["/thumbnail.png"],
+  },
+};
 
 export default function Page() {
   return (

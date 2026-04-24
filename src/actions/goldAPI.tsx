@@ -1,6 +1,8 @@
 "use server";
 
-export default async function GoldAPI() {
+import { GoldAPIResponse, GoldAPIResult } from "@/types";
+
+export default async function GoldAPI(): Promise<GoldAPIResult> {
   try {
     const SERVER_KEY = process.env.GOLD_API_KEY!;
 
@@ -29,7 +31,7 @@ export default async function GoldAPI() {
       throw new Error(response.statusText);
     }
 
-    const result = await response.json();
+    const result: GoldAPIResponse = await response.json();
     // console.log(result.response.body.items);
 
     const data = result.response.body.items;
@@ -38,7 +40,7 @@ export default async function GoldAPI() {
     // console.log("data.item", data.item);
     // console.log("타입", typeof data.item);
 
-    const gold1kg = data.item.filter((item) => {
+    const gold1kg = data.item.filter((item: any) => {
       // 금 1kg만 조회되게 가공
       return item.isinCd === "KRD040200002";
     });

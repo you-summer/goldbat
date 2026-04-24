@@ -1,4 +1,4 @@
-import { Comment } from "@/types";
+import { Comment, Inquiry } from "@/types";
 import { db } from "./firebase";
 import {
   collection,

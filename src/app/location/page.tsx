@@ -3,6 +3,17 @@ import style from "./page.module.css";
 import KakaoMap from "./_components/KakaoMap";
 import CopyButton from "./_components/copy-button";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "황금박쥐 - 전시장 찾아가기",
+  description: "황금박쥐가 전시되어 있는 전시장 찾아가기",
+  openGraph: {
+    title: "황금박쥐 - 전시장 찾아가기",
+    description: "황금박쥐가 전시되어 있는 전시장 찾아가기",
+    images: ["/thumbnail.png"],
+  },
+};
 
 export default function Page() {
   const address =

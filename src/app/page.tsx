@@ -4,6 +4,17 @@ import Content1 from "./_components/content1";
 import Header from "./_components/header";
 import Content3 from "./_components/content3";
 import DownArrowButton from "./_components/down-arrow-button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "황금박쥐",
+  description: "황금박쥐에 대한 정보를 만나보세요",
+  openGraph: {
+    title: "황금박쥐",
+    description: "황금박쥐에 대한 정보를 만나보세요",
+    images: ["/thumbnail.png"],
+  },
+};
 
 export default function Home() {
   return (

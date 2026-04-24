@@ -1,5 +1,6 @@
 "use client";
 
+import { ChartItem } from "@/types";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -22,9 +23,9 @@ ChartJS.register(
   Legend,
 );
 
-export function LineChart({ formattData }) {
+export function LineChart({ formattData }: { formattData: ChartItem[] }) {
   const sortedData = [...formattData].sort(
-    (a, b) => new Date(a.data) - new Date(b.data),
+    (a, b) => new Date(a.data).getTime() - new Date(b.data).getTime(),
   );
   const prices = sortedData.map((item) => {
     return item.price;
