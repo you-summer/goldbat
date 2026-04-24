@@ -16,6 +16,15 @@ export default function CommentBox() {
       return;
     }
 
+    if (
+      !comment.includes("따봉") ||
+      !comment.includes("황금박쥐") ||
+      !comment.includes("고마")
+    ) {
+      alert("[따봉 황금박쥐야 고마워] 해당 문장을 포함해야 합니다!");
+      return;
+    }
+
     try {
       await addComment(comment);
       alert("따봉 완료 👍");
@@ -30,14 +39,14 @@ export default function CommentBox() {
   };
 
   useEffect(() => {
-    const commentList = async () => {
-      const comment = await getComment();
-      setCommentList(comment);
+    const fetchComments = async () => {
+      const data = await getComment();
+      setCommentList(data);
     };
-    commentList();
-  }, [comment]);
+    fetchComments();
+  }, []);
 
-  console.log("댓글리스트?", commentList);
+  console.log("뭐임?", commentList);
 
   return (
     <div className={styles.container}>
@@ -54,8 +63,9 @@ export default function CommentBox() {
         </button>
       </div>
       <div className={styles.commentItem}>
-        <CommentItem />
-        <CommentItem />
+        {commentList.map((item, index) => {
+          return <CommentItem key={index} comment={item} />;
+        })}
       </div>
     </div>
   );

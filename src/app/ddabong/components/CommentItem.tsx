@@ -1,8 +1,16 @@
-export default function CommentItem() {
+import { Comment } from "@/types";
+
+type Props = {
+  comment: Comment;
+};
+
+export default function CommentItem({ comment }: Props) {
   return (
     <div className="flex gap-10 border-b border-yellow-300 px-4 py-10">
-      <div>1</div>
-      <div className="text-l">따봉 황금박쥐야 고마워!</div>
+      <div className="text-l flex-1">{comment.content}</div>
+      <div className="text-sm">
+        {comment.createdAt.toDate().toLocaleDateString()}
+      </div>
     </div>
   );
 }

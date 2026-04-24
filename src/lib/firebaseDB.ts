@@ -26,7 +26,7 @@ export const getComment = async (): Promise<Comment[]> => {
   const commentList = comment.docs
     .map((item) => {
       const data = item.data();
-      console.log("🔥 가져온 데이터22", data);
+
       return {
         content: data.content,
         createdAt: data.createdAt,
@@ -36,6 +36,5 @@ export const getComment = async (): Promise<Comment[]> => {
     .toSorted((a, b) => {
       return b.createdAt.toDate() - a.createdAt.toDate();
     });
-
   return commentList;
 };

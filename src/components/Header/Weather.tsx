@@ -3,7 +3,7 @@ import style from "./Weather.module.css";
 
 export default async function Weather() {
   const response = await WeatherAPI();
-  console.log(response);
+  // console.log(response);
   if (!response.status) {
     return <div>{response.error}</div>;
   }

@@ -27,7 +27,7 @@ export default async function WeatherAPI() {
       ny: "71",
     });
 
-    console.log("요청 URL:", `${url}/getUltraSrtNcst?${params.toString()}`);
+    // console.log("요청 URL:", `${url}/getUltraSrtNcst?${params.toString()}`);
 
     const response = await fetch(
       `${url}/getUltraSrtNcst?${params.toString()}`,
@@ -46,7 +46,7 @@ export default async function WeatherAPI() {
     // 👉 T1H만 찾기
     const tempItem = items.find((item: any) => item.category === "T1H");
 
-    console.log("오류?", tempItem);
+    // console.log("오류?", tempItem);
 
     return {
       status: true,
