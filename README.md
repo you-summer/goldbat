@@ -18,6 +18,11 @@ Next.js 기반으로 구현된 웹 애플리케이션으로,
 ## 💻 미리보기
 
 ### 메인페이지
-<img width="1920" height="2742" alt="황금박쥐" src="https://github.com/user-attachments/assets/5276a158-298c-4c91-b156-35e07fd94b60" />
+section1.
+인터랙티브 배경과 SplitText 애니메이션을 활용한 히어로 섹션입니다.
+첫 화면에서 인터랙티브 배경 효과와 타이포그래피 애니메이션을 통해 프로젝트의 분위기를 직관적으로 전달하도록 설계했습니다.
+<img width="1895" height="901" alt="image" src="https://github.com/user-attachments/assets/fcbaf148-8ee8-4d1f-b02d-d6e30d5abd2c" />
+
+
 
 
