@@ -2,7 +2,13 @@
 
 <img width="1200" height="630" alt="GOLD BAT (3)" src="https://github.com/user-attachments/assets/51907fa0-410d-457b-85b7-9fba6d72ba1a" />
 
-Next.js 로 만든 영화 검색, 리뷰 커뮤니티 웹입니다.
+Next.js 기반으로 구현된 웹 애플리케이션으로,
+함평에 위치한 황금박쥐 조형물을 중심으로 한 정보 및 인터랙션 사이트입니다.
+
+사용자는 황금박쥐 조형물의 현재 가치를 실시간으로 확인할 수 있으며,
+간단한 방명록 기능을 통해 메시지를 남기고 “황금박쥐의 기운”을 공유받는 경험을 제공합니다.
+
+또한 조형물의 위치 정보를 확인할 수 있으며, 관리자에게 직접 이메일을 전송할 수 있는 기능을 포함하고 있습니다.
 
 🟢 배포 사이트: [[https://naega-box.vercel.app/](https://goldbat-chi.vercel.app/)]
 
