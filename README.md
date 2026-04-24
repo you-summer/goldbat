@@ -42,7 +42,7 @@ Next.js 기반으로 구현된 웹 애플리케이션으로,
 ### 소원빌기 페이지
 <img width="1130" height="1426" alt="황금박쥐-소원빌기" src="https://github.com/user-attachments/assets/c75dd518-09d1-4079-9255-e83a98af25ce" />
 
-####Wish / Comment Section
+#### Wish / Comment Section
 단순 CRUD 기능이 아니라</br>
 스토리 기반 UX 흐름을 설계하여 사용자가 메시지를 남기는 과정을 하나의 경험처럼 느낄 수 있도록 구현했습니다.</br>
 Firebase를 활용해 데이터를 저장하고,</br>
