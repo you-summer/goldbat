@@ -9,15 +9,15 @@ export const navBar: NavItem[] = [
   },
   {
     id: 2,
-    menu: "지도",
-    url: "/location",
-    icon: "map",
-  },
-  {
-    id: 3,
     menu: "따봉",
     url: "/ddabong",
     icon: "like",
+  },
+  {
+    id: 3,
+    menu: "지도",
+    url: "/location",
+    icon: "map",
   },
   {
     id: 4,

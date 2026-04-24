@@ -12,3 +12,8 @@ export type Comment = {
   content: string;
   createdAt: Timestamp;
 };
+
+export type Inquiry = {
+  email: string;
+  message: string;
+};

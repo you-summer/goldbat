@@ -38,3 +38,12 @@ export const getComment = async (): Promise<Comment[]> => {
     });
   return commentList;
 };
+
+// 문의추가
+export const addMessage = async ({ email, message }: Inquiry) => {
+  await addDoc(collection(db, "Inquiries"), {
+    email: email,
+    message: message,
+    createdAt: new Date(),
+  });
+};
