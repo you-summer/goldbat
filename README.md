@@ -101,7 +101,7 @@ Kakao Map API를 활용한 위치 시각화와  </br>
 - React bits
 
 #### BackEnd
-- firebase firestor
+- firebase firestore
 
 #### API
 - 금 시세 API
