@@ -51,8 +51,10 @@ Framer Motion으로 단계별 인터랙션을 구성했습니다.</br>
 - Framer Motion 기반 단계별 애니메이션
 - 조건 기반 댓글 입력 검증 (“따봉 황금박쥐야 고마워” 포함)
 - Firestore 기반 댓글 저장 및 실시간 렌더링
+- “오복” 개념을 활용한 인터랙션 UI
+- 감정 참여형 방명록 UX 설계
 
-### 소원빌기 페이지
+### 길찾기 페이지
 <img width="1920" height="1525" alt="황금박쥐-전시장-찾아가기" src="https://github.com/user-attachments/assets/72821099-ff3e-4af8-aa52-8c3718e96aae" />
 
 #### Location
@@ -67,5 +69,11 @@ Kakao Map API를 활용한 위치 시각화와  </br>
 - 관람 시간 및 운영 정보 제공
 - 카드 기반 정보 구조 UI 설계
 
-- “오복” 개념을 활용한 인터랙션 UI
-- 감정 참여형 방명록 UX 설계
+#### 문의 페이지
+<img width="1232" height="804" alt="image" src="https://github.com/user-attachments/assets/dcef63f6-8078-4cb9-8ac0-af58e4f239b9" />
+
+#### Contact
+사용자가 프로젝트 제작자에게 직접 문의를 남길 수 있는 커뮤니케이션 페이지입니다.
+- 컴포넌트 분리를 통한 구조화 (ContactForm)
+- 프로젝트 피드백 및 문의 채널 역할
+- 사용자-개발자 간 커뮤니케이션 인터페이스 설계
