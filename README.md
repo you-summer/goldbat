@@ -10,7 +10,7 @@ Next.js 기반으로 구현된 웹 애플리케이션으로,
 
 또한 조형물의 위치 정보를 확인할 수 있으며, 관리자에게 직접 이메일을 전송할 수 있는 기능을 포함하고 있습니다.
 
-🟢 배포 사이트: [[https://naega-box.vercel.app/](https://goldbat-chi.vercel.app/)]
+🟢 배포 사이트: https://goldbat-chi.vercel.app/
 
 
 ---
