@@ -20,12 +20,14 @@ Next.js 기반으로 구현된 웹 애플리케이션으로,
 ### 메인페이지
 
 <img width="1895" height="901" alt="image" src="https://github.com/user-attachments/assets/fcbaf148-8ee8-4d1f-b02d-d6e30d5abd2c" />
+
 ### Content1
 인터랙티브 배경과 SplitText 애니메이션을 활용한 히어로 섹션입니다.
 첫 화면에서 인터랙티브 배경 효과와 타이포그래피 애니메이션을 통해 프로젝트의 분위기를 직관적으로 전달하도록 설계했습니다.
 
 
 <img width="1900" height="1816" alt="황금박쥐 (1)" src="https://github.com/user-attachments/assets/33185dbd-a747-4e43-8d32-6eb52f9829b8" />
+
 ### Content2 & Content3
 이 섹션은 황금박쥐 조형물의 현재 가치를 중심으로
 실제 금 시세 데이터를 기반으로 한 정보 제공 및 시각화 기능을 담당합니다.
